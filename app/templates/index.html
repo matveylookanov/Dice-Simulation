@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Simulation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Dice Simulation</h1>
+    <form method="POST">
+        <label for="dice_type">Dice Type:</label>
+        <select name="dice_type">
+            <option value="D6">D6</option>
+            <option value="D8">D8</option>
+            <option value="D10">D10</option>
+            <option value="D12">D12</option>
+            <option value="D20">D20</option>
+        </select>
+        <label for="dice_count">Number of Dice:</label>
+        <input type="number" name="dice_count" min="1" value="1" required>
+        <button type="submit">Roll</button>
+    </form>
+</body>
+</html>
